@@ -10,19 +10,12 @@ laravel製軽量フレームワーク Lumen を使ってみる。
 * PDO PHP Extension
 * Mbstring PHP Extension
 
-## コードを配置する
+## Lumenをインストールする
 
-GitHubからコードをクローンすることで配置します。
+GitHubからコードをクローンし、composerを使ってLumen本体を配置します。
 
 ```
 $ git clone https://github.com/reflet/app-lumen.git .
-```
-
-## Lumenをインストールする
-
-composerを使ってLumen本体と各種ライブラリを配置します。
-
-```
 $ composer update
 $ composer set-env
 ```
