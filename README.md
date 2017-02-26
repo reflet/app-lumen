@@ -12,11 +12,11 @@ laravel製軽量フレームワーク Lumen を使ってみる。
 
 ## コードを配置する
 
-GitBucketからコードをクローンすることで配置します。
+GitHubからコードをクローンすることで配置します。
+
 ```
-$ git clone git@bitbucket.org:reflet/php-lumen.git .
+$ git clone https://github.com/reflet/app-lumen.git .
 ```
-※ sshを利用する場合は、SSH認証キーの登録が必要です。
 
 ## Lumenをインストールする
 
@@ -24,14 +24,8 @@ composerを使ってLumen本体と各種ライブラリを配置します。
 
 ```
 $ composer update
+$ composer set-env
 ```
 ※ vendorフォルダ内にインストールされます。
+※ .envファイル作成
 
-## 使い始める前の準備
-
-環境設定ファイルを作成します。
-ルート直下にある「.env.example」をコピーして「.env」を作成します。
-※ セキュリティの関係上、「.env」ファイルはバージョン管理の対象外としてください。
-```
-$ cp .env.example .env
-```
