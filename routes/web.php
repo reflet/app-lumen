@@ -14,27 +14,3 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
-
-$app->get('hoge', function () {
-    return 'Hello World';
-});
-
-$app->get('user/{id}', function ($id) {
-    return 'User '.$id;
-});
-
-$app->get('profile', ['as' => 'profile', function () {
-    //
-}]);
-$app->get('foo', function () {
-    $url = route('profile');
-    return $url;
-});
-
-$app->get('user/{id}/profile', ['as' => 'user-profile', function ($id) {
-    //
-}]);
-$app->get('bar', function () {
-    $url = route('user-profile', ['id' => 1]);
-    return $url;
-});
