@@ -18,13 +18,13 @@ GitBucketからコードをクローンし、composerを使ってLumen本体と�
 
 **開発環境の場合)**
 ```
-$ git clone https://github.com/reflet/app-lumen.git .
+$ git clone https://github.com/reflet/app-lumen5.3.git .
 $ composer create-project
 ```
 
 **本番環境の場合)**
 ```
-$ git clone https://github.com/reflet/app-lumen.git .
+$ git clone https://github.com/reflet/app-lumen5.3.git .
 $ composer install
 ```
 
